@@ -11,7 +11,6 @@ const ButtonExConfig = {
     }
 };
 
-// Wrapper function that includes react-open-weather component
 function ButtonExImpl(props) {
 
     return (
@@ -23,16 +22,12 @@ function ButtonExImpl(props) {
 
 export default function ButtonEx(props) {
 
-    // render nothing if component not configured
     if (ButtonExConfig.isEmpty(props)) {
         return null;
     }
 
-    // render ReactWeather component if component configured
-    // pass props to ReactWeatherWrapper. These props include the mapped properties from AEM JSON
     return ButtonExImpl(props);
 
 }
 
-// Map OpenWeather to AEM component
 MapTo('wknd-spa-react/components/button')(ButtonEx, ButtonExConfig);
