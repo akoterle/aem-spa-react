@@ -1,11 +1,11 @@
 import React from 'react';
 import {MapTo} from '@adobe/aem-react-editable-components';
-import ReactWeather, { useOpenWeather } from 'react-open-weather';
+import ReactWeather, { useOpenWeather, useVisualCrossing } from 'react-open-weather';
 
 // Open weather API Key
 // For simplicity it is hard coded in the file, ideally this is extracted in to an environment variable
-const API_KEY = 'b951fd4016dc0c18a69e4c2013bef521';
-
+//const API_KEY = 'b951fd4016dc0c18a69e4c2013bef521';
+const API_KEY = '4QENNLEAGK2TZPWFU4M4UJ3MR';
 // Logic to render placeholder or component
 const OpenWeatherEditConfig = {
 
@@ -17,12 +17,12 @@ const OpenWeatherEditConfig = {
 
 // Wrapper function that includes react-open-weather component
 function ReactWeatherWrapper(props) {
-    const { data, isLoading, errorMessage } = useOpenWeather({
+    const { data, isLoading, errorMessage } = useVisualCrossing({
         key: API_KEY,
         lat: props.lat, // passed in from AEM JSON
         lon: props.lon, // passed in from AEM JSON
-        lang: 'en',
-        unit: 'imperial', // values are (metric, standard, imperial)
+        lang: 'it',
+        unit: 'metric', // values are (metric, standard, imperial)
     });
 
     return (
