@@ -12,8 +12,13 @@ const DropDownExConfig = {
 };
 
 function DropDownExImpl(props) {
+
+    const handleSelect=(e)=>{
+        console.log(e);
+    }
+
     return (
-        <DropdownButton id="dropdown-basic-button" title={props.label}>
+        <DropdownButton id="dropdown-basic-button" title={props.label} onSelect={handleSelect}>
             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
