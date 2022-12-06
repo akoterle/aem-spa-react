@@ -2,7 +2,6 @@ import React from 'react';
 import {MapTo} from '@adobe/aem-react-editable-components';
 import {Button} from 'react-bootstrap';
 
-// Logic to render placeholder or component
 const ButtonExConfig = {
 
     emptyLabel: 'ButtonEx',

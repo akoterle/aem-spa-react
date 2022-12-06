@@ -18,9 +18,10 @@ import withAsyncImport from "../utils/withAsyncImport";
 import './Page/Page';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
-import './OpenWeather/OpenWeather';
 import './ButtonEx/ButtonEx';
 import './DropDownEx/DropDownEx'
+import './BasicCard/BasicCard'
+import './OpenWeather/OpenWeather';
 
 import {MapTo} from '@adobe/aem-react-editable-components';
 
